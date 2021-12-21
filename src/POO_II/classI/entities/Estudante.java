@@ -2,16 +2,16 @@ package POO_II.classI.entities;
 
 import POO_II.classI.aplication.Program;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Random;
 
 public class Estudante {
     private String name;
-    private Date dateOfBirth;
+    private LocalDate dateOfBirth;
     private String classRoom;
     private int id;
 
-    public Estudante(String name, Date dateOfBirth, String classRoom) {
+    public Estudante(String name, LocalDate dateOfBirth, String classRoom) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.classRoom = classRoom;
@@ -24,7 +24,7 @@ public class Estudante {
         return name;
     }
 
-    public Date getDateOfBirth() {
+    public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
@@ -41,6 +41,6 @@ public class Estudante {
         return "name='" + name + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
                 ", classRoom='" + classRoom + '\'' +
-                ", id=";
+                ", id= " + id;
     }
 }

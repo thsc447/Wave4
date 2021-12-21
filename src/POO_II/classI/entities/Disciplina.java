@@ -16,4 +16,12 @@ public class Disciplina {
     public double getCourseLoad() {
         return courseLoad;
     }
+
+    @Override
+    public String toString() {
+        return "Disciplina{" +
+                "name='" + name + '\'' +
+                ", courseLoad=" + courseLoad +
+                '}';
+    }
 }
