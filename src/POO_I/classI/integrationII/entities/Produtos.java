@@ -30,7 +30,6 @@ public class Produtos {
         return "Produtos: " +
                 " nome='" + nome + '\'' +
                 ", preco=" + preco +
-                ", quantidade=" + quantidade
-                ;
+                ", quantidade=" + quantidade;
     }
 }
