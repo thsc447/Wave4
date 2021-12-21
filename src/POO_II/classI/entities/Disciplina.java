@@ -1,2 +1,5 @@
-package POO_II.classI.entities;public class Disciplina {
+package POO_II.classI.entities;
+
+public class Disciplina {
+    //todo
 }
