@@ -17,7 +17,7 @@ public class Estudante {
         this.classRoom = classRoom;
 
         Random random = new Random();
-        this.id = random.nextInt(3000),
+        this.id = random.nextInt(3000);
     }
 
     public String getName() {
