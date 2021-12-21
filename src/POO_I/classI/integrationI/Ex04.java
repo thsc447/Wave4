@@ -4,7 +4,7 @@ import POO_I.classI.integrationI.entities.VerificaNumeroPrimo;
 
 import java.util.Scanner;
 
-public class Exo4 {
+public class Ex04 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite a quantidade desejada: ");
