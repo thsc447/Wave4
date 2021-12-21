@@ -1,5 +1,7 @@
 package POO_I.classI.integrationII;
 
+import java.util.ArrayList;
+
 public class Ex01 {
     public static void main(String[] args) {
         Integer[] vector = {52, 10, 85, 1324, 01, 13, 62, 30, 12,  127};
