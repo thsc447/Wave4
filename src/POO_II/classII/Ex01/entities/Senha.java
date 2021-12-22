@@ -12,7 +12,7 @@ public class Senha {
     }
 
     public void setValue(String pwd) throws IllegalAccessError {
-        if(!regex.matcher(pwd).find())
+        if(regex.matcher(pwd).find())
             System.out.println("Senha correta");
         else
             throw new IllegalAccessError("Digite uma senha mais forte!");
