@@ -1,4 +1,4 @@
-package POO_II.classI.entities;
+package POO_II.classI.Ex01.entities;
 
 public class Disciplina {
     private String name;

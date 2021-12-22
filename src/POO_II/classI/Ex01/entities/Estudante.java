@@ -1,6 +1,4 @@
-package POO_II.classI.entities;
-
-import POO_II.classI.aplication.Program;
+package POO_II.classI.Ex01.entities;
 
 import java.time.LocalDate;
 import java.util.Random;

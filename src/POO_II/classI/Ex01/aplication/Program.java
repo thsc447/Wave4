@@ -1,8 +1,8 @@
-package POO_II.classI.aplication;
+package POO_II.classI.Ex01.aplication;
 
-import POO_II.classI.entities.Disciplina;
-import POO_II.classI.entities.Estudante;
-import POO_II.classI.entities.Turma;
+import POO_II.classI.Ex01.entities.Disciplina;
+import POO_II.classI.Ex01.entities.Estudante;
+import POO_II.classI.Ex01.entities.Turma;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
