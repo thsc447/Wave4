@@ -15,6 +15,8 @@
 /* EX02 */
 /* -------------- */
 
+/*Mostre o título e o nome do gênero de todas as séries.*/
+SELECT s.title, g.name from series s join genres g on (s.genre_id = g.id);
 
 
 
