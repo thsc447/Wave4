@@ -28,10 +28,20 @@ SELECT s.title, g.name from series s join genres g on (s.genre_id = g.id);
 
  /*Mostre o título de todas as séries e o número total de temporadas que
    cada uma delas possui.*/
+
 SELECT s.title, COUNT(se.title)
 FROM series s
 JOIN seasons se on (s.id = se.serie_id)
 GROUP BY s.title;
+
+/*Mostre o nome de todos os gêneros e o número total de filmes de cada
+  um, desde que seja maior ou igual a 3.*/
+
+  SELECT g.name, COUNT(m.title)
+  FROM genres g
+  JOIN movies m on (g.id = m.genre_id)
+  GROUP BY g.name
+  HAVING COUNT(m.title) > 3;
 
 
 
