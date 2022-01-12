@@ -43,5 +43,13 @@ GROUP BY s.title;
   GROUP BY g.name
   HAVING COUNT(m.title) > 3;
 
+ /*Mostre apenas o nome e o sobrenome dos atores que atuam em todos
+   os filmes Guerra nas Estrelas e que estes não se repitam.*/
+
+SELECT DISTINCT a.first_name, m.title
+FROM actor_movie am
+JOIN movies m on (m.id = am.movie_id)
+JOIN actors a on (a.id = am.actor_id)
+WHERE m.id = 3 or m.id = 4;
 
 
