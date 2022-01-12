@@ -26,6 +26,12 @@ SELECT s.title, g.name from series s join genres g on (s.genre_id = g.id);
  JOIN episodes e on (ae.episode_id = e.id)
  JOIN actors a on (ae.actor_id = a.id);
 
+ /*Mostre o título de todas as séries e o número total de temporadas que
+   cada uma delas possui.*/
+SELECT s.title, COUNT(se.title)
+FROM series s
+JOIN seasons se on (s.id = se.serie_id)
+GROUP BY s.title;
 
 
 
