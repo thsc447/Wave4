@@ -18,5 +18,14 @@
 /*Mostre o título e o nome do gênero de todas as séries.*/
 SELECT s.title, g.name from series s join genres g on (s.genre_id = g.id);
 
+/*Mostre o título dos episódios, os nomes e sobrenomes dos atores que
+  atuam em cada um deles.*/
+
+ SELECT e.title, a.first_name, a.last_name
+ FROM actor_episode ae
+ JOIN episodes e on (ae.episode_id = e.id)
+ JOIN actors a on (ae.actor_id = a.id);
+
+
 
 
